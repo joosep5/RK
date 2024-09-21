@@ -5,13 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 //discist tulnud
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Route,
   RouterProvider
 } from "react-router-dom"
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route
       path="/"
@@ -26,7 +26,8 @@ const router = createBrowserRouter(
         element={<h1>Contact</h1>}
       />
     </Route>
-  )
+  ),
+  { basename: "/RK" }
 )
 
 const root = ReactDOM.createRoot(

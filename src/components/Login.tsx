@@ -1,3 +1,4 @@
+//components/login.tsx
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import { FormEvent, useState, useEffect } from "react";
 
@@ -11,19 +12,19 @@ export default function MyForm() {
 
     console.log(form);
 
-    // console.log({
-    //   username,
-    //   password,
-    // });
-  };
+  //    console.log({
+  //     username,
+  //     password,
+  //    });
+   };
 
   // useEffect(() => {
   //   console.log("Renders every time");
   // });
 
-  // useEffect(() => {
-  //   console.log("Renders first time");
-  // }, []);
+  useEffect(() => {
+    console.log("Renders first time");
+  }, []);
 
   // useEffect(() => {
   //   console.log("Renders every time username changes");
